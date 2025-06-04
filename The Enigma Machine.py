@@ -1,4 +1,4 @@
-#disk 3 has characteristics to a plugboard. Plugboard characteristics are explained below
+#plugboard/disks/wire_reversaol_config parameters: "if the n-th number is m, then the m-th number is n".
 starting_position_disk1 = [26, 25, 20, 15, 24, 16, 18, 23, 17, 14, 19, 22, 21, 10,
                             4, 6, 9, 7, 11, 3, 13, 12, 8, 5, 2, 1]
 
@@ -12,7 +12,6 @@ current_position_disk1 = starting_position_disk1.copy()
 current_position_disk2 = starting_position_disk2.copy()
 current_position_disk3 = starting_position_disk3.copy()
 
-#plugboard parameters: "if the n-th number is m, then the m-th number is n".
 plugboard = [16, 21, 25, 14, 23, 17, 26, 24, 19, 15, 18, 20, 22, 4, 10, 1, 6, 
              11, 9, 12, 2, 13, 5, 8, 3, 7]
 
