@@ -1,4 +1,4 @@
-#plugboard/disks/wire_reversaol_config parameters: "if the n-th number is m, then the m-th number is n".
+#plugboard/disks/reflector parameters: "if the n-th number is m, then the m-th number is n".
 starting_position_disk1 = [26, 25, 20, 15, 24, 16, 18, 23, 17, 14, 19, 22, 21, 10,
                             4, 6, 9, 7, 11, 3, 13, 12, 8, 5, 2, 1]
 
@@ -15,7 +15,7 @@ current_position_disk3 = starting_position_disk3.copy()
 plugboard = [16, 21, 25, 14, 23, 17, 26, 24, 19, 15, 18, 20, 22, 4, 10, 1, 6, 
              11, 9, 12, 2, 13, 5, 8, 3, 7]
 
-wire_reversal_config = [23, 20, 16, 26, 14, 17, 15, 21, 18, 22, 19, 25, 24,
+reflector = [23, 20, 16, 26, 14, 17, 15, 21, 18, 22, 19, 25, 24,
                          5, 7, 3, 6, 9, 11, 2, 8, 10, 1, 13, 12, 4]
 
 def pass_thru_disk(num, disk):
@@ -67,7 +67,7 @@ while True:
             char_num = pass_thru_disk(char_num, current_position_disk1)
             char_num = pass_thru_disk(char_num, current_position_disk2)
             char_num = pass_thru_disk(char_num, current_position_disk3)
-            char_num = pass_thru_disk(char_num, wire_reversal_config)
+            char_num = pass_thru_disk(char_num, reflector)
             char_num = pass_thru_disk(char_num, current_position_disk3)
             char_num = pass_thru_disk(char_num, current_position_disk2)
             char_num = pass_thru_disk(char_num, current_position_disk1)
